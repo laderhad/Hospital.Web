@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.Models", "Hospital
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.Services", "Hospital.Services\Hospital.Services.csproj", "{DEE3D332-601A-4125-9BF2-AF99A20D08DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.Repository", "Hospital.Repository\Hospital.Repository.csproj", "{EEEC9B72-19F8-441A-81A4-21747094C55F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.Repositories", "Hospital.Repository\Hospital.Repositories.csproj", "{EEEC9B72-19F8-441A-81A4-21747094C55F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.Utilities", "Hospital.Utilities\Hospital.Utilities.csproj", "{19111FB4-1F49-4FE4-93F0-A8220DFB78A6}"
 EndProject
