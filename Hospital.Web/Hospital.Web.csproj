@@ -6,6 +6,21 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Areas\Admin\**" />
+    <Compile Remove="Areas\Doctor\**" />
+    <Content Remove="Areas\Admin\**" />
+    <Content Remove="Areas\Doctor\**" />
+    <EmbeddedResource Remove="Areas\Admin\**" />
+    <EmbeddedResource Remove="Areas\Doctor\**" />
+    <None Remove="Areas\Admin\**" />
+    <None Remove="Areas\Doctor\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Areas\Admin\Controllers\HospitalController.cs" />
+  </ItemGroup>
+
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.35" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.35" />
@@ -24,9 +39,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Areas\Admin\Controllers\" />
-	  <Folder Include="Areas\Admin\Views\" />
 	  <Folder Include="Areas\Doctor\Controllers\" />
 	  <Folder Include="Areas\Doctor\Views\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Areas\Admin\Views\HospitalController\Index.cshtml" />
 	</ItemGroup>
 </Project>
