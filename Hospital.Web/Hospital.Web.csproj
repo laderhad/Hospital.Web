@@ -22,6 +22,7 @@
   </ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="cloudscribe.Web.Pagination" Version="6.0.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.35" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.35" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.35" />
@@ -35,6 +36,7 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\Hospital.Repository\Hospital.Repositories.csproj" />
+	  <ProjectReference Include="..\Hospital.Services\Hospital.Services.csproj" />
 	  <ProjectReference Include="..\Hospital.Utilities\Hospital.Utilities.csproj" />
 	</ItemGroup>
 
@@ -45,5 +47,8 @@
 
 	<ItemGroup>
 	  <None Include="Areas\Admin\Views\HospitalController\Index.cshtml" />
+	  <None Include="Areas\Admin\Views\Hospital\Create.cshtml" />
+	  <None Include="Areas\Admin\Views\Hospital\Edit.cshtml" />
+	  <None Include="Areas\Admin\Views\Hospital\Index.cshtml" />
 	</ItemGroup>
 </Project>

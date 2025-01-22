@@ -50,7 +50,7 @@ namespace Hospital.Services
         public HospitalInfoViewModel GetHospitalById(int HospitalId)
         {
             var model = _unitOfWork.Repository<HospitalInfo>().GetByID(HospitalId);
-            var vm =new HospitalInfoViewModel(model);
+            var vm = new HospitalInfoViewModel(model);
             return vm;
         }
 
@@ -64,7 +64,7 @@ namespace Hospital.Services
         public void UpdateHospitalInfo(HospitalInfoViewModel hospitalInfo)
         {
             var model = new HospitalInfoViewModel().ConvertViewModel(hospitalInfo);
-            var ModelById=_unitOfWork.Repository<HospitalInfo>().GetByID(model.Id);
+            var ModelById = _unitOfWork.Repository<HospitalInfo>().GetByID(model.Id);
             ModelById.Name = hospitalInfo.Name;
             ModelById.Country = hospitalInfo.Country;
             ModelById.City = hospitalInfo.City;
@@ -78,4 +78,5 @@ namespace Hospital.Services
             return modelList.Select(x => new HospitalInfoViewModel(x)).ToList();
         }
     }
+
 }

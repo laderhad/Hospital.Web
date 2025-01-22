@@ -7,8 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Hospital.Models\Hospital.Models.csproj" />
-    <ProjectReference Include="..\Hospital.Repository\Hospital.Repositories.csproj" />
     <ProjectReference Include="..\Hospital.Utilities\Hospital.Utilities.csproj" />
     <ProjectReference Include="..\Hospital.ViewModels\Hospital.ViewModels.csproj" />
   </ItemGroup>
